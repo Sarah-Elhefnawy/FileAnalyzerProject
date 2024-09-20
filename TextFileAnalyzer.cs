@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileAnalyzerProject
 {
-	internal class TextFileAnalyzer
+	public class TextFileAnalyzer : FileAnalyzer, IFileAnalysis
 	{
+		public void AnalyzeFile(FileInfo fileInfo)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }

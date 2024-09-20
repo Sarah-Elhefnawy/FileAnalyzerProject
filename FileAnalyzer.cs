@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace FileAnalyzerProject
 {
-	internal class FileAnalyzer
+	public class FileAnalyzer
 	{
+		//Base class
+
+
+		private AnalysisResults _results;
+
+		// Encapsulation
+		public AnalysisResults GetResults() { return _results; }
+		public void SetResults(AnalysisResults results) 
+		{
+			// Checking or validation
+			_results = results; 
+		}
 	}
 }

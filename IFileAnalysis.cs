@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace FileAnalyzerProject
 {
-	internal interface IFileAnalysis
+	public interface IFileAnalysis
 	{
+		// FileInfo is a class in DotNet that carries all info about the sent file
+		void AnalyzeFile(FileInfo fileInfo);
 	}
 }

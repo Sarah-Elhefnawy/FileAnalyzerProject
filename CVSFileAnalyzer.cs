@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace FileAnalyzerProject
 {
-	internal class CVSFileAnalyzer
+	public class CVSFileAnalyzer : FileAnalyzer, IFileAnalysis
 	{
+		public void AnalyzeFile(FileInfo fileInfo)
+		{
+			throw new NotImplementedException();
+		}
 	}
 }
