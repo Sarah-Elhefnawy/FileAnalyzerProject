@@ -10,7 +10,31 @@ namespace FileAnalyzerProject
 	{
 		public void AnalyzeFile(FileInfo fileInfo)
 		{
-			throw new NotImplementedException();
+			// to get the file all path
+			string filePath = File.ReadAllText(fileInfo.FullName);
+
+			AnalysisResults results = new AnalysisResults();
+
+			// Wrod Count
+			var words = filePath.Split(new char[]
+			{
+				' ',
+				'\r', // new line
+				'\n', // new line
+			});
+			results.WordCount = words.Length;
+
+			// Character Count
+			results.CharcterCount = filePath.Length;
+
+			// LineCount
+			var lines = filePath.Split(new char[] {'\n'});
+			results.LineCount = lines.Length;
+
+			// FieldCount
+
+
+			SetResults(results);
 		}
 	}
 }
