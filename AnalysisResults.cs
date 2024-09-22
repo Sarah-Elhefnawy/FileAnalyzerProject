@@ -12,7 +12,7 @@ namespace FileAnalyzerProject
 		// as struct is a value type like air unlike classes that carries methods
 
 		public int WordCount;
-		public int CharcterCount;
+		public int CharacterCount;
 		public int LineCount;
 		public int FieldCount;
 	}

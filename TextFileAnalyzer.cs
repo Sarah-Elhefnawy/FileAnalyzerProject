@@ -8,9 +8,11 @@ namespace FileAnalyzerProject
 {
 	public class TextFileAnalyzer : FileAnalyzer, IFileAnalysis
 	{
+		// multible inheritance one class and more than one interface
 		public void AnalyzeFile(FileInfo fileInfo)
 		{
 			// to get the file all path
+			// read all text to count tham unlike csv files
 			string filePath = File.ReadAllText(fileInfo.FullName);
 
 			AnalysisResults results = new AnalysisResults();
@@ -25,7 +27,7 @@ namespace FileAnalyzerProject
 			results.WordCount = words.Length;
 
 			// Character Count
-			results.CharcterCount = filePath.Length;
+			results.CharacterCount = filePath.Length;
 
 			// LineCount
 			var lines = filePath.Split(new char[] {'\n'});

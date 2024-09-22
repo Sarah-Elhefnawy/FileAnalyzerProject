@@ -10,7 +10,6 @@ namespace FileAnalyzerProject
 	{
 		//Base class
 
-
 		private AnalysisResults _results;
 
 		// Encapsulation
