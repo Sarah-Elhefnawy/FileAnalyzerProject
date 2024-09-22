@@ -60,13 +60,7 @@
 					Console.WriteLine($"File name: {file.Name}");
 					Console.WriteLine($"Field count: {results.FieldCount}");
 				}
-
-				
-
-
-
 			}
-
 		}
 	}
 }

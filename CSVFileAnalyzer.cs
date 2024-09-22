@@ -24,7 +24,6 @@ namespace FileAnalyzerProject
 			results.FieldCount = rowElements.Length;
 
 			SetResults(results);
-
 		}
 	}
 }

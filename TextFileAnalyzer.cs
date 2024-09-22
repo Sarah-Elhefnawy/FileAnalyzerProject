@@ -33,9 +33,6 @@ namespace FileAnalyzerProject
 			var lines = filePath.Split(new char[] {'\n'});
 			results.LineCount = lines.Length;
 
-			// FieldCount
-
-
 			SetResults(results);
 		}
 	}
