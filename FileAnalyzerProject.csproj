@@ -7,12 +7,4 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Compile Remove="CVSFileAnalyzer.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="CVSFileAnalyzer.cs" />
-  </ItemGroup>
-
 </Project>

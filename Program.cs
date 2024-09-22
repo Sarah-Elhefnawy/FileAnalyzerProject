@@ -45,7 +45,7 @@
 				}
 				else if (file.IsCSVFile())
 				{
-					fileAnalysis = new CVSFileAnalyzer();
+					fileAnalysis = new CSVFileAnalyzer();
 
 					// after i check the file extension i need to implement the methods of counting
 					// due to encapsulations to hide these results i can't call directly to Base class "FileAnalyzer" 
